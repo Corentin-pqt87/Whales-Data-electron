@@ -1,0 +1,10 @@
+# Obsidian
+.obsidian/workspace.json
+.obsidian/appearance.json
+.obsidian/hotkeys.json
+
+# Env
+.env
+
+# NodeJS
+.node_modules/
