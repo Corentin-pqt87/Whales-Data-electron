@@ -124,10 +124,10 @@
   "drawingOpenCount": 0,
   "library": "deprecated",
   "library2": {
-    "type": "excalidrawlib",
-    "version": 2,
+    "libraryItems": [],
     "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.27.3",
-    "libraryItems": []
+    "type": "excalidrawlib",
+    "version": 2
   },
   "imageElementNotice": true,
   "mdSVGwidth": 500,
@@ -177,314 +177,314 @@
   "sidepanelTabs": [],
   "customPens": [
     {
-      "type": "default",
-      "freedrawOnly": false,
-      "strokeColor": "#000000",
       "backgroundColor": "transparent",
       "fillStyle": "hachure",
-      "strokeWidth": 0,
-      "roughness": 0,
+      "freedrawOnly": false,
       "penOptions": {
-        "highlighter": false,
         "constantPressure": false,
         "hasOutline": false,
-        "outlineWidth": 1,
+        "highlighter": false,
         "options": {
-          "thinning": 0.6,
-          "smoothing": 0.5,
-          "streamline": 0.5,
           "easing": "easeOutSine",
-          "start": {
-            "cap": true,
-            "taper": 0,
-            "easing": "linear"
-          },
           "end": {
             "cap": true,
-            "taper": 0,
-            "easing": "linear"
-          }
-        }
-      }
+            "easing": "linear",
+            "taper": 0
+          },
+          "smoothing": 0.5,
+          "start": {
+            "cap": true,
+            "easing": "linear",
+            "taper": 0
+          },
+          "streamline": 0.5,
+          "thinning": 0.6
+        },
+        "outlineWidth": 1
+      },
+      "roughness": 0,
+      "strokeColor": "#000000",
+      "strokeWidth": 0,
+      "type": "default"
     },
     {
-      "type": "highlighter",
-      "freedrawOnly": true,
-      "strokeColor": "#FFC47C",
       "backgroundColor": "#FFC47C",
       "fillStyle": "solid",
-      "strokeWidth": 2,
-      "roughness": null,
+      "freedrawOnly": true,
       "penOptions": {
-        "highlighter": true,
         "constantPressure": true,
         "hasOutline": true,
-        "outlineWidth": 4,
+        "highlighter": true,
         "options": {
-          "thinning": 1,
+          "easing": "linear",
+          "end": {
+            "cap": true,
+            "easing": "linear",
+            "taper": 0
+          },
           "smoothing": 0.5,
+          "start": {
+            "cap": true,
+            "easing": "linear",
+            "taper": 0
+          },
           "streamline": 0.5,
-          "easing": "linear",
-          "start": {
-            "taper": 0,
-            "cap": true,
-            "easing": "linear"
-          },
-          "end": {
-            "taper": 0,
-            "cap": true,
-            "easing": "linear"
-          }
-        }
-      }
-    },
-    {
-      "type": "finetip",
-      "freedrawOnly": false,
-      "strokeColor": "#3E6F8D",
-      "backgroundColor": "transparent",
-      "fillStyle": "hachure",
-      "strokeWidth": 0.5,
-      "roughness": 0,
-      "penOptions": {
-        "highlighter": false,
-        "hasOutline": false,
-        "outlineWidth": 1,
-        "constantPressure": true,
-        "options": {
-          "smoothing": 0.4,
-          "thinning": -0.5,
-          "streamline": 0.4,
-          "easing": "linear",
-          "start": {
-            "taper": 5,
-            "cap": false,
-            "easing": "linear"
-          },
-          "end": {
-            "taper": 5,
-            "cap": false,
-            "easing": "linear"
-          }
-        }
-      }
-    },
-    {
-      "type": "fountain",
-      "freedrawOnly": false,
-      "strokeColor": "#000000",
-      "backgroundColor": "transparent",
-      "fillStyle": "hachure",
+          "thinning": 1
+        },
+        "outlineWidth": 4
+      },
+      "roughness": null,
+      "strokeColor": "#FFC47C",
       "strokeWidth": 2,
-      "roughness": 0,
+      "type": "highlighter"
+    },
+    {
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "freedrawOnly": false,
       "penOptions": {
+        "constantPressure": true,
+        "hasOutline": false,
         "highlighter": false,
+        "options": {
+          "easing": "linear",
+          "end": {
+            "cap": false,
+            "easing": "linear",
+            "taper": 5
+          },
+          "smoothing": 0.4,
+          "start": {
+            "cap": false,
+            "easing": "linear",
+            "taper": 5
+          },
+          "streamline": 0.4,
+          "thinning": -0.5
+        },
+        "outlineWidth": 1
+      },
+      "roughness": 0,
+      "strokeColor": "#3E6F8D",
+      "strokeWidth": 0.5,
+      "type": "finetip"
+    },
+    {
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "freedrawOnly": false,
+      "penOptions": {
         "constantPressure": false,
         "hasOutline": false,
-        "outlineWidth": 1,
+        "highlighter": false,
         "options": {
-          "smoothing": 0.2,
-          "thinning": 0.6,
-          "streamline": 0.2,
           "easing": "easeInOutSine",
-          "start": {
-            "taper": 150,
-            "cap": true,
-            "easing": "linear"
-          },
           "end": {
-            "taper": 1,
             "cap": true,
-            "easing": "linear"
-          }
-        }
-      }
+            "easing": "linear",
+            "taper": 1
+          },
+          "smoothing": 0.2,
+          "start": {
+            "cap": true,
+            "easing": "linear",
+            "taper": 150
+          },
+          "streamline": 0.2,
+          "thinning": 0.6
+        },
+        "outlineWidth": 1
+      },
+      "roughness": 0,
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "type": "fountain"
     },
     {
-      "type": "marker",
-      "freedrawOnly": true,
-      "strokeColor": "#B83E3E",
       "backgroundColor": "#FF7C7C",
       "fillStyle": "dashed",
-      "strokeWidth": 2,
-      "roughness": 3,
+      "freedrawOnly": true,
       "penOptions": {
-        "highlighter": false,
         "constantPressure": true,
         "hasOutline": true,
-        "outlineWidth": 4,
+        "highlighter": false,
         "options": {
-          "thinning": 1,
-          "smoothing": 0.5,
-          "streamline": 0.5,
           "easing": "linear",
-          "start": {
-            "taper": 0,
-            "cap": true,
-            "easing": "linear"
-          },
           "end": {
-            "taper": 0,
             "cap": true,
-            "easing": "linear"
-          }
-        }
-      }
+            "easing": "linear",
+            "taper": 0
+          },
+          "smoothing": 0.5,
+          "start": {
+            "cap": true,
+            "easing": "linear",
+            "taper": 0
+          },
+          "streamline": 0.5,
+          "thinning": 1
+        },
+        "outlineWidth": 4
+      },
+      "roughness": 3,
+      "strokeColor": "#B83E3E",
+      "strokeWidth": 2,
+      "type": "marker"
     },
     {
-      "type": "thick-thin",
-      "freedrawOnly": true,
-      "strokeColor": "#CECDCC",
       "backgroundColor": "transparent",
       "fillStyle": "hachure",
-      "strokeWidth": 0,
-      "roughness": null,
+      "freedrawOnly": true,
       "penOptions": {
-        "highlighter": true,
         "constantPressure": true,
         "hasOutline": false,
-        "outlineWidth": 1,
+        "highlighter": true,
         "options": {
-          "thinning": 1,
-          "smoothing": 0.5,
-          "streamline": 0.5,
           "easing": "linear",
-          "start": {
-            "taper": 0,
-            "cap": true,
-            "easing": "linear"
-          },
           "end": {
             "cap": true,
-            "taper": true,
-            "easing": "linear"
-          }
-        }
-      }
+            "easing": "linear",
+            "taper": true
+          },
+          "smoothing": 0.5,
+          "start": {
+            "cap": true,
+            "easing": "linear",
+            "taper": 0
+          },
+          "streamline": 0.5,
+          "thinning": 1
+        },
+        "outlineWidth": 1
+      },
+      "roughness": null,
+      "strokeColor": "#CECDCC",
+      "strokeWidth": 0,
+      "type": "thick-thin"
     },
     {
-      "type": "thin-thick-thin",
-      "freedrawOnly": true,
-      "strokeColor": "#CECDCC",
       "backgroundColor": "transparent",
       "fillStyle": "hachure",
-      "strokeWidth": 0,
-      "roughness": null,
+      "freedrawOnly": true,
       "penOptions": {
-        "highlighter": true,
         "constantPressure": true,
         "hasOutline": false,
-        "outlineWidth": 1,
+        "highlighter": true,
         "options": {
-          "thinning": 1,
-          "smoothing": 0.5,
-          "streamline": 0.5,
           "easing": "linear",
-          "start": {
-            "cap": true,
-            "taper": true,
-            "easing": "linear"
-          },
           "end": {
             "cap": true,
-            "taper": true,
-            "easing": "linear"
-          }
-        }
-      }
+            "easing": "linear",
+            "taper": true
+          },
+          "smoothing": 0.5,
+          "start": {
+            "cap": true,
+            "easing": "linear",
+            "taper": true
+          },
+          "streamline": 0.5,
+          "thinning": 1
+        },
+        "outlineWidth": 1
+      },
+      "roughness": null,
+      "strokeColor": "#CECDCC",
+      "strokeWidth": 0,
+      "type": "thin-thick-thin"
     },
     {
-      "type": "default",
-      "freedrawOnly": false,
-      "strokeColor": "#000000",
       "backgroundColor": "transparent",
       "fillStyle": "hachure",
-      "strokeWidth": 0,
-      "roughness": 0,
+      "freedrawOnly": false,
       "penOptions": {
-        "highlighter": false,
         "constantPressure": false,
         "hasOutline": false,
-        "outlineWidth": 1,
+        "highlighter": false,
         "options": {
-          "thinning": 0.6,
-          "smoothing": 0.5,
-          "streamline": 0.5,
           "easing": "easeOutSine",
-          "start": {
-            "cap": true,
-            "taper": 0,
-            "easing": "linear"
-          },
           "end": {
             "cap": true,
-            "taper": 0,
-            "easing": "linear"
-          }
-        }
-      }
+            "easing": "linear",
+            "taper": 0
+          },
+          "smoothing": 0.5,
+          "start": {
+            "cap": true,
+            "easing": "linear",
+            "taper": 0
+          },
+          "streamline": 0.5,
+          "thinning": 0.6
+        },
+        "outlineWidth": 1
+      },
+      "roughness": 0,
+      "strokeColor": "#000000",
+      "strokeWidth": 0,
+      "type": "default"
     },
     {
-      "type": "default",
-      "freedrawOnly": false,
-      "strokeColor": "#000000",
       "backgroundColor": "transparent",
       "fillStyle": "hachure",
-      "strokeWidth": 0,
-      "roughness": 0,
+      "freedrawOnly": false,
       "penOptions": {
-        "highlighter": false,
         "constantPressure": false,
         "hasOutline": false,
-        "outlineWidth": 1,
+        "highlighter": false,
         "options": {
-          "thinning": 0.6,
-          "smoothing": 0.5,
-          "streamline": 0.5,
           "easing": "easeOutSine",
-          "start": {
-            "cap": true,
-            "taper": 0,
-            "easing": "linear"
-          },
           "end": {
             "cap": true,
-            "taper": 0,
-            "easing": "linear"
-          }
-        }
-      }
+            "easing": "linear",
+            "taper": 0
+          },
+          "smoothing": 0.5,
+          "start": {
+            "cap": true,
+            "easing": "linear",
+            "taper": 0
+          },
+          "streamline": 0.5,
+          "thinning": 0.6
+        },
+        "outlineWidth": 1
+      },
+      "roughness": 0,
+      "strokeColor": "#000000",
+      "strokeWidth": 0,
+      "type": "default"
     },
     {
-      "type": "default",
-      "freedrawOnly": false,
-      "strokeColor": "#000000",
       "backgroundColor": "transparent",
       "fillStyle": "hachure",
-      "strokeWidth": 0,
-      "roughness": 0,
+      "freedrawOnly": false,
       "penOptions": {
-        "highlighter": false,
         "constantPressure": false,
         "hasOutline": false,
-        "outlineWidth": 1,
+        "highlighter": false,
         "options": {
-          "thinning": 0.6,
-          "smoothing": 0.5,
-          "streamline": 0.5,
           "easing": "easeOutSine",
-          "start": {
-            "cap": true,
-            "taper": 0,
-            "easing": "linear"
-          },
           "end": {
             "cap": true,
-            "taper": 0,
-            "easing": "linear"
-          }
-        }
-      }
+            "easing": "linear",
+            "taper": 0
+          },
+          "smoothing": 0.5,
+          "start": {
+            "cap": true,
+            "easing": "linear",
+            "taper": 0
+          },
+          "streamline": 0.5,
+          "thinning": 0.6
+        },
+        "outlineWidth": 1
+      },
+      "roughness": 0,
+      "strokeColor": "#000000",
+      "strokeWidth": 0,
+      "type": "default"
     }
   ],
   "numberOfCustomPens": 0,
@@ -499,30 +499,30 @@
   "pdfDirection": "right",
   "pdfImportScale": 0.3,
   "gridSettings": {
-    "DYNAMIC_COLOR": true,
     "COLOR": "#000000",
-    "OPACITY": 50,
+    "DYNAMIC_COLOR": true,
     "GRID_DIRECTION": {
       "horizontal": true,
       "vertical": true
-    }
+    },
+    "OPACITY": 50
   },
   "laserSettings": {
+    "COLOR": "#ff0000",
     "DECAY_LENGTH": 50,
-    "DECAY_TIME": 1000,
-    "COLOR": "#ff0000"
+    "DECAY_TIME": 1000
   },
   "embeddableMarkdownDefaults": {
-    "useObsidianDefaults": false,
+    "backgroundColor": "#fff",
     "backgroundMatchCanvas": false,
     "backgroundMatchElement": true,
-    "backgroundColor": "#fff",
     "backgroundOpacity": 60,
-    "borderMatchElement": true,
     "borderColor": "#fff",
+    "borderMatchElement": true,
     "borderOpacity": 0,
     "filenameVisible": false,
-    "lockedReadingMode": false
+    "lockedReadingMode": false,
+    "useObsidianDefaults": false
   },
   "markdownNodeOneClickEditing": false,
   "canvasImmersiveEmbed": true,
@@ -530,129 +530,84 @@
   "aiEnabled": true,
   "aiVerboseLogging": false,
   "aiProviderProfiles": {
-    "OpenAI": {
-      "provider": "openai",
-      "apiKey": "",
-      "baseURL": "https://api.openai.com/v1"
-    },
     "Anthropic": {
-      "provider": "anthropic",
       "apiKey": "",
-      "baseURL": "https://api.anthropic.com/v1"
+      "baseURL": "https://api.anthropic.com/v1",
+      "provider": "anthropic"
     },
     "Google Gemini": {
-      "provider": "google",
       "apiKey": "",
-      "baseURL": "https://generativelanguage.googleapis.com/v1beta"
+      "baseURL": "https://generativelanguage.googleapis.com/v1beta",
+      "provider": "google"
     },
-    "xAI": {
-      "provider": "xai",
+    "OpenAI": {
       "apiKey": "",
-      "baseURL": "https://api.x.ai/v1"
+      "baseURL": "https://api.openai.com/v1",
+      "provider": "openai"
     },
     "OpenAI-compatible": {
-      "provider": "openai-compatible",
       "apiKey": "",
-      "baseURL": "https://api.openai.com/v1"
+      "baseURL": "https://api.openai.com/v1",
+      "provider": "openai-compatible"
+    },
+    "xAI": {
+      "apiKey": "",
+      "baseURL": "https://api.x.ai/v1",
+      "provider": "xai"
     }
   },
   "aiTextModelConfigs": {
-    "gpt-5-mini": {
-      "providerId": "OpenAI",
-      "model": "gpt-5-mini",
-      "endpoint": "",
-      "multimodalSupport": true
-    },
     "claude-sonnet-4-5": {
-      "providerId": "Anthropic",
-      "model": "claude-sonnet-4-5",
       "endpoint": "",
-      "multimodalSupport": true
+      "model": "claude-sonnet-4-5",
+      "multimodalSupport": true,
+      "providerId": "Anthropic"
     },
     "gemini-2.5-pro": {
-      "providerId": "Google Gemini",
-      "model": "gemini-2.5-pro",
       "endpoint": "",
-      "multimodalSupport": true
+      "model": "gemini-2.5-pro",
+      "multimodalSupport": true,
+      "providerId": "Google Gemini"
+    },
+    "gpt-5-mini": {
+      "endpoint": "",
+      "model": "gpt-5-mini",
+      "multimodalSupport": true,
+      "providerId": "OpenAI"
     },
     "grok-4-fast": {
-      "providerId": "xAI",
-      "model": "grok-4-fast",
       "endpoint": "",
-      "multimodalSupport": true
+      "model": "grok-4-fast",
+      "multimodalSupport": true,
+      "providerId": "xAI"
     }
   },
   "aiImageModelConfigs": {
     "dall-e-2": {
-      "providerId": "OpenAI",
       "model": "dall-e-2",
+      "providerId": "OpenAI",
       "supportedSizes": [
         "256x256",
         "512x512",
         "1024x1024"
       ],
-      "supportsPromptImageTransforms": true,
-      "supportsMaskImageEdits": true
+      "supportsMaskImageEdits": true,
+      "supportsPromptImageTransforms": true
     },
     "dall-e-3": {
-      "providerId": "OpenAI",
       "model": "dall-e-3",
+      "providerId": "OpenAI",
       "supportedSizes": [
         "1024x1024",
         "1792x1024",
         "1024x1792"
       ],
-      "supportsPromptImageTransforms": false,
-      "supportsMaskImageEdits": false
-    },
-    "gpt-image-1": {
-      "providerId": "OpenAI",
-      "model": "gpt-image-1",
-      "supportedSizes": [
-        "1024x1024",
-        "1536x1024",
-        "1024x1536"
-      ],
-      "supportsPromptImageTransforms": true,
-      "supportsMaskImageEdits": true
-    },
-    "gpt-image-1-mini": {
-      "providerId": "OpenAI",
-      "model": "gpt-image-1-mini",
-      "supportedSizes": [
-        "1024x1024",
-        "1536x1024",
-        "1024x1536"
-      ],
-      "supportsPromptImageTransforms": true,
-      "supportsMaskImageEdits": true
-    },
-    "gpt-image-1.5": {
-      "providerId": "OpenAI",
-      "model": "gpt-image-1.5",
-      "supportedSizes": [
-        "1024x1024",
-        "1536x1024",
-        "1024x1536"
-      ],
-      "supportsPromptImageTransforms": true,
-      "supportsMaskImageEdits": true
-    },
-    "gpt-image-2": {
-      "providerId": "OpenAI",
-      "model": "gpt-image-2",
-      "supportedSizes": [
-        "1024x1024",
-        "1536x1024",
-        "1024x1536",
-        "2048x2048"
-      ],
-      "supportsPromptImageTransforms": true,
-      "supportsMaskImageEdits": true
+      "supportsMaskImageEdits": false,
+      "supportsPromptImageTransforms": false
     },
     "gemini-2.5-flash-image": {
-      "providerId": "Google Gemini",
       "model": "gemini-2.5-flash-image",
+      "providerId": "Google Gemini",
       "supportedSizes": [
         "1024x1024",
         "848x1264",
@@ -665,12 +620,50 @@
         "1376x768",
         "1584x672"
       ],
-      "supportsPromptImageTransforms": true,
-      "supportsMaskImageEdits": false
+      "supportsMaskImageEdits": false,
+      "supportsPromptImageTransforms": true
+    },
+    "gemini-3-pro-image-preview": {
+      "model": "gemini-3-pro-image-preview",
+      "providerId": "Google Gemini",
+      "supportedSizes": [
+        "1024x1024",
+        "2048x2048",
+        "4096x4096",
+        "848x1264",
+        "1696x2528",
+        "3392x5056",
+        "1264x848",
+        "2528x1696",
+        "5056x3392",
+        "896x1200",
+        "1792x2400",
+        "3584x4800",
+        "1200x896",
+        "2400x1792",
+        "4800x3584",
+        "928x1152",
+        "1856x2304",
+        "3712x4608",
+        "1152x928",
+        "2304x1856",
+        "4608x3712",
+        "768x1376",
+        "1536x2752",
+        "3072x5504",
+        "1376x768",
+        "2752x1536",
+        "5504x3072",
+        "1584x672",
+        "3168x1344",
+        "6336x2688"
+      ],
+      "supportsMaskImageEdits": false,
+      "supportsPromptImageTransforms": true
     },
     "gemini-3.1-flash-image-preview": {
-      "providerId": "Google Gemini",
       "model": "gemini-3.1-flash-image-preview",
+      "providerId": "Google Gemini",
       "supportedSizes": [
         "512x512",
         "1024x1024",
@@ -729,64 +722,71 @@
         "6144x768",
         "12288x1536"
       ],
-      "supportsPromptImageTransforms": true,
-      "supportsMaskImageEdits": false
+      "supportsMaskImageEdits": false,
+      "supportsPromptImageTransforms": true
     },
-    "gemini-3-pro-image-preview": {
-      "providerId": "Google Gemini",
-      "model": "gemini-3-pro-image-preview",
+    "gpt-image-1": {
+      "model": "gpt-image-1",
+      "providerId": "OpenAI",
       "supportedSizes": [
         "1024x1024",
-        "2048x2048",
-        "4096x4096",
-        "848x1264",
-        "1696x2528",
-        "3392x5056",
-        "1264x848",
-        "2528x1696",
-        "5056x3392",
-        "896x1200",
-        "1792x2400",
-        "3584x4800",
-        "1200x896",
-        "2400x1792",
-        "4800x3584",
-        "928x1152",
-        "1856x2304",
-        "3712x4608",
-        "1152x928",
-        "2304x1856",
-        "4608x3712",
-        "768x1376",
-        "1536x2752",
-        "3072x5504",
-        "1376x768",
-        "2752x1536",
-        "5504x3072",
-        "1584x672",
-        "3168x1344",
-        "6336x2688"
+        "1536x1024",
+        "1024x1536"
       ],
-      "supportsPromptImageTransforms": true,
-      "supportsMaskImageEdits": false
+      "supportsMaskImageEdits": true,
+      "supportsPromptImageTransforms": true
     },
-    "grok-imagine-image-quality": {
-      "providerId": "xAI",
-      "model": "grok-imagine-image-quality",
+    "gpt-image-1-mini": {
+      "model": "gpt-image-1-mini",
+      "providerId": "OpenAI",
       "supportedSizes": [
-        "1024x1024"
+        "1024x1024",
+        "1536x1024",
+        "1024x1536"
       ],
-      "supportsPromptImageTransforms": true,
-      "supportsMaskImageEdits": false
+      "supportsMaskImageEdits": true,
+      "supportsPromptImageTransforms": true
+    },
+    "gpt-image-1.5": {
+      "model": "gpt-image-1.5",
+      "providerId": "OpenAI",
+      "supportedSizes": [
+        "1024x1024",
+        "1536x1024",
+        "1024x1536"
+      ],
+      "supportsMaskImageEdits": true,
+      "supportsPromptImageTransforms": true
+    },
+    "gpt-image-2": {
+      "model": "gpt-image-2",
+      "providerId": "OpenAI",
+      "supportedSizes": [
+        "1024x1024",
+        "1536x1024",
+        "1024x1536",
+        "2048x2048"
+      ],
+      "supportsMaskImageEdits": true,
+      "supportsPromptImageTransforms": true
     },
     "grok-imagine-image-pro": {
-      "providerId": "xAI",
       "model": "grok-imagine-image-pro",
+      "providerId": "xAI",
       "supportedSizes": [
         "1024x1024"
       ],
-      "supportsPromptImageTransforms": true,
-      "supportsMaskImageEdits": false
+      "supportsMaskImageEdits": false,
+      "supportsPromptImageTransforms": true
+    },
+    "grok-imagine-image-quality": {
+      "model": "grok-imagine-image-quality",
+      "providerId": "xAI",
+      "supportedSizes": [
+        "1024x1024"
+      ],
+      "supportsMaskImageEdits": false,
+      "supportsPromptImageTransforms": true
     }
   },
   "aiDefaultTextModel": "gpt-5-mini",
@@ -796,102 +796,36 @@
   "aiDefaultMaxResponseTokens": 0,
   "modifierKeyConfig": {
     "Mac": {
-      "LocalFileDragAction": {
-        "defaultAction": "image-import",
-        "rules": [
-          {
-            "shift": false,
-            "ctrl_cmd": false,
-            "alt_opt": false,
-            "meta_ctrl": false,
-            "result": "image-import"
-          },
-          {
-            "shift": true,
-            "ctrl_cmd": false,
-            "alt_opt": true,
-            "meta_ctrl": false,
-            "result": "link"
-          },
-          {
-            "shift": true,
-            "ctrl_cmd": false,
-            "alt_opt": false,
-            "meta_ctrl": false,
-            "result": "image-url"
-          },
-          {
-            "shift": false,
-            "ctrl_cmd": false,
-            "alt_opt": true,
-            "meta_ctrl": false,
-            "result": "embeddable"
-          }
-        ]
-      },
-      "WebBrowserDragAction": {
-        "defaultAction": "image-url",
-        "rules": [
-          {
-            "shift": false,
-            "ctrl_cmd": false,
-            "alt_opt": false,
-            "meta_ctrl": false,
-            "result": "image-url"
-          },
-          {
-            "shift": true,
-            "ctrl_cmd": false,
-            "alt_opt": true,
-            "meta_ctrl": false,
-            "result": "link"
-          },
-          {
-            "shift": false,
-            "ctrl_cmd": false,
-            "alt_opt": true,
-            "meta_ctrl": false,
-            "result": "embeddable"
-          },
-          {
-            "shift": true,
-            "ctrl_cmd": false,
-            "alt_opt": false,
-            "meta_ctrl": false,
-            "result": "image-import"
-          }
-        ]
-      },
       "InternalDragAction": {
         "defaultAction": "link",
         "rules": [
           {
-            "shift": false,
-            "ctrl_cmd": false,
             "alt_opt": false,
+            "ctrl_cmd": false,
             "meta_ctrl": false,
-            "result": "link"
+            "result": "link",
+            "shift": false
           },
           {
-            "shift": false,
-            "ctrl_cmd": false,
             "alt_opt": false,
+            "ctrl_cmd": false,
             "meta_ctrl": true,
-            "result": "embeddable"
+            "result": "embeddable",
+            "shift": false
           },
           {
-            "shift": true,
-            "ctrl_cmd": false,
             "alt_opt": false,
+            "ctrl_cmd": false,
             "meta_ctrl": false,
-            "result": "image"
+            "result": "image",
+            "shift": true
           },
           {
-            "shift": true,
-            "ctrl_cmd": false,
             "alt_opt": false,
+            "ctrl_cmd": false,
             "meta_ctrl": true,
-            "result": "image-fullsize"
+            "result": "image-fullsize",
+            "shift": true
           }
         ]
       },
@@ -899,140 +833,140 @@
         "defaultAction": "new-tab",
         "rules": [
           {
-            "shift": true,
-            "ctrl_cmd": true,
             "alt_opt": false,
+            "ctrl_cmd": true,
             "meta_ctrl": false,
-            "result": "active-pane"
+            "result": "active-pane",
+            "shift": true
           },
           {
-            "shift": false,
-            "ctrl_cmd": true,
             "alt_opt": false,
+            "ctrl_cmd": true,
             "meta_ctrl": false,
-            "result": "new-tab"
+            "result": "new-tab",
+            "shift": false
           },
           {
-            "shift": false,
-            "ctrl_cmd": true,
             "alt_opt": true,
+            "ctrl_cmd": true,
             "meta_ctrl": false,
-            "result": "new-pane"
+            "result": "new-pane",
+            "shift": false
           },
           {
-            "shift": true,
-            "ctrl_cmd": true,
             "alt_opt": true,
+            "ctrl_cmd": true,
             "meta_ctrl": false,
-            "result": "popout-window"
+            "result": "popout-window",
+            "shift": true
           },
           {
-            "shift": false,
-            "ctrl_cmd": true,
             "alt_opt": false,
+            "ctrl_cmd": true,
             "meta_ctrl": true,
-            "result": "md-properties"
+            "result": "md-properties",
+            "shift": false
+          }
+        ]
+      },
+      "LocalFileDragAction": {
+        "defaultAction": "image-import",
+        "rules": [
+          {
+            "alt_opt": false,
+            "ctrl_cmd": false,
+            "meta_ctrl": false,
+            "result": "image-import",
+            "shift": false
+          },
+          {
+            "alt_opt": true,
+            "ctrl_cmd": false,
+            "meta_ctrl": false,
+            "result": "link",
+            "shift": true
+          },
+          {
+            "alt_opt": false,
+            "ctrl_cmd": false,
+            "meta_ctrl": false,
+            "result": "image-url",
+            "shift": true
+          },
+          {
+            "alt_opt": true,
+            "ctrl_cmd": false,
+            "meta_ctrl": false,
+            "result": "embeddable",
+            "shift": false
+          }
+        ]
+      },
+      "WebBrowserDragAction": {
+        "defaultAction": "image-url",
+        "rules": [
+          {
+            "alt_opt": false,
+            "ctrl_cmd": false,
+            "meta_ctrl": false,
+            "result": "image-url",
+            "shift": false
+          },
+          {
+            "alt_opt": true,
+            "ctrl_cmd": false,
+            "meta_ctrl": false,
+            "result": "link",
+            "shift": true
+          },
+          {
+            "alt_opt": true,
+            "ctrl_cmd": false,
+            "meta_ctrl": false,
+            "result": "embeddable",
+            "shift": false
+          },
+          {
+            "alt_opt": false,
+            "ctrl_cmd": false,
+            "meta_ctrl": false,
+            "result": "image-import",
+            "shift": true
           }
         ]
       }
     },
     "Win": {
-      "LocalFileDragAction": {
-        "defaultAction": "image-import",
-        "rules": [
-          {
-            "shift": false,
-            "ctrl_cmd": false,
-            "alt_opt": false,
-            "meta_ctrl": false,
-            "result": "image-import"
-          },
-          {
-            "shift": false,
-            "ctrl_cmd": true,
-            "alt_opt": false,
-            "meta_ctrl": false,
-            "result": "link"
-          },
-          {
-            "shift": true,
-            "ctrl_cmd": false,
-            "alt_opt": false,
-            "meta_ctrl": false,
-            "result": "image-url"
-          },
-          {
-            "shift": true,
-            "ctrl_cmd": true,
-            "alt_opt": false,
-            "meta_ctrl": false,
-            "result": "embeddable"
-          }
-        ]
-      },
-      "WebBrowserDragAction": {
-        "defaultAction": "image-url",
-        "rules": [
-          {
-            "shift": false,
-            "ctrl_cmd": false,
-            "alt_opt": false,
-            "meta_ctrl": false,
-            "result": "image-url"
-          },
-          {
-            "shift": false,
-            "ctrl_cmd": true,
-            "alt_opt": false,
-            "meta_ctrl": false,
-            "result": "link"
-          },
-          {
-            "shift": true,
-            "ctrl_cmd": true,
-            "alt_opt": false,
-            "meta_ctrl": false,
-            "result": "embeddable"
-          },
-          {
-            "shift": true,
-            "ctrl_cmd": false,
-            "alt_opt": false,
-            "meta_ctrl": false,
-            "result": "image-import"
-          }
-        ]
-      },
       "InternalDragAction": {
         "defaultAction": "link",
         "rules": [
           {
-            "shift": false,
+            "alt_opt": false,
             "ctrl_cmd": false,
-            "alt_opt": false,
             "meta_ctrl": false,
-            "result": "link"
+            "result": "link",
+            "shift": false
           },
           {
-            "shift": true,
+            "alt_opt": false,
             "ctrl_cmd": true,
-            "alt_opt": false,
             "meta_ctrl": false,
-            "result": "embeddable"
+            "result": "embeddable",
+            "shift": true
           },
           {
-            "shift": true,
+            "alt_opt": false,
             "ctrl_cmd": false,
-            "alt_opt": false,
             "meta_ctrl": false,
-            "result": "image"
+            "result": "image",
+            "shift": true
           },
           {
-            "shift": false,
-            "ctrl_cmd": true,
             "alt_opt": true,
+            "ctrl_cmd": true,
             "meta_ctrl": false,
-            "result": "image-fullsize"
+            "result": "image-fullsize",
+            "shift": false
           }
         ]
       },
@@ -1040,39 +974,105 @@
         "defaultAction": "new-tab",
         "rules": [
           {
-            "shift": false,
+            "alt_opt": false,
             "ctrl_cmd": false,
-            "alt_opt": false,
             "meta_ctrl": false,
-            "result": "active-pane"
+            "result": "active-pane",
+            "shift": false
           },
           {
-            "shift": false,
-            "ctrl_cmd": true,
             "alt_opt": false,
+            "ctrl_cmd": true,
             "meta_ctrl": false,
-            "result": "new-tab"
+            "result": "new-tab",
+            "shift": false
           },
           {
-            "shift": false,
-            "ctrl_cmd": true,
             "alt_opt": true,
+            "ctrl_cmd": true,
             "meta_ctrl": false,
-            "result": "new-pane"
+            "result": "new-pane",
+            "shift": false
           },
           {
-            "shift": true,
-            "ctrl_cmd": true,
             "alt_opt": true,
+            "ctrl_cmd": true,
             "meta_ctrl": false,
-            "result": "popout-window"
+            "result": "popout-window",
+            "shift": true
           },
           {
-            "shift": false,
-            "ctrl_cmd": true,
             "alt_opt": false,
+            "ctrl_cmd": true,
             "meta_ctrl": true,
-            "result": "md-properties"
+            "result": "md-properties",
+            "shift": false
+          }
+        ]
+      },
+      "LocalFileDragAction": {
+        "defaultAction": "image-import",
+        "rules": [
+          {
+            "alt_opt": false,
+            "ctrl_cmd": false,
+            "meta_ctrl": false,
+            "result": "image-import",
+            "shift": false
+          },
+          {
+            "alt_opt": false,
+            "ctrl_cmd": true,
+            "meta_ctrl": false,
+            "result": "link",
+            "shift": false
+          },
+          {
+            "alt_opt": false,
+            "ctrl_cmd": false,
+            "meta_ctrl": false,
+            "result": "image-url",
+            "shift": true
+          },
+          {
+            "alt_opt": false,
+            "ctrl_cmd": true,
+            "meta_ctrl": false,
+            "result": "embeddable",
+            "shift": true
+          }
+        ]
+      },
+      "WebBrowserDragAction": {
+        "defaultAction": "image-url",
+        "rules": [
+          {
+            "alt_opt": false,
+            "ctrl_cmd": false,
+            "meta_ctrl": false,
+            "result": "image-url",
+            "shift": false
+          },
+          {
+            "alt_opt": false,
+            "ctrl_cmd": true,
+            "meta_ctrl": false,
+            "result": "link",
+            "shift": false
+          },
+          {
+            "alt_opt": false,
+            "ctrl_cmd": true,
+            "meta_ctrl": false,
+            "result": "embeddable",
+            "shift": true
+          },
+          {
+            "alt_opt": false,
+            "ctrl_cmd": false,
+            "meta_ctrl": false,
+            "result": "image-import",
+            "shift": true
           }
         ]
       }
@@ -1086,33 +1086,34 @@
   "rank": "Bronze",
   "modifierKeyOverrides": [
     {
+      "key": "Enter",
       "modifiers": [
         "Mod"
-      ],
-      "key": "Enter"
+      ]
     },
     {
+      "key": "k",
       "modifiers": [
         "Mod"
-      ],
-      "key": "k"
+      ]
     },
     {
+      "key": "G",
       "modifiers": [
         "Mod"
-      ],
-      "key": "G"
+      ]
     }
   ],
   "showSplashscreen": true,
   "pdfSettings": {
-    "pageSize": "A4",
-    "pageOrientation": "portrait",
-    "fitToPage": 1,
-    "paperColor": "white",
-    "customPaperColor": "#ffffff",
     "alignment": "center",
-    "margin": "normal"
+    "customPaperColor": "#ffffff",
+    "fitToPage": 1,
+    "margin": "normal",
+    "pageOrientation": "portrait",
+    "pageSize": "A4",
+    "paperColor": "white"
   },
-  "disableContextMenu": false
+  "disableContextMenu": false,
+  "pasteCodeBlockAs": "ask"
 }
