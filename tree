@@ -4,8 +4,25 @@
 │   ├── components
 │   ├── db
 │   │   └── schematic.canvas
-│   └── pages
+│   ├── maquettes
+│   │   ├── palette.md
+│   │   ├── proto-logo.kra
+│   │   ├── proto-logo.png
+│   │   ├── proto-logo.svg
+│   │   ├── shells.webp
+│   │   ├── thématique.md
+│   │   └── zonning.md
+│   ├── Méta data.md
+│   ├── pages
+│   ├── Signets.md
+│   ├── tache.md
+│   └── Tags.md
 ├── electron
+│   ├── db
+│   │   ├── database.js
+│   │   ├── dbModel.sql
+│   │   ├── saveBase.js
+│   │   └── WDdb.sql
 │   ├── forge.config.mjs
 │   ├── index.html
 │   ├── package.json
@@ -23,4 +40,4 @@
 ├── run.sh
 └── tree
 
-8 directories, 16 files
+10 directories, 31 files
