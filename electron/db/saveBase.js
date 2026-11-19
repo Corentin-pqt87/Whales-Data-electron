@@ -101,18 +101,17 @@ export class SaveFile {
 
         // tout est OK
         const instance = new SaveFile(filePath);
-        instance.open();
+        instance.open({ create: true });
         instance.initSchema();
         instance.close();
         return instance;
     }
 
     // ouvrir une sauvegarde (uniquement 1)
-    open({ readonly = false } = {}){
+    open({ readonly = false, create = false } = {}){
         if( this.db ) return this;
 
-        // le fichier existe ?
-        if( !fs.existsSync(this.dbPath) ){
+        if( !create && !fs.existsSync(this.dbPath) ){
             throw new Error(`Fichier de sauvegarde introuvable : ${this.dbPath}`);
         }
         this.db = new Database(this.dbPath, { readonly });
