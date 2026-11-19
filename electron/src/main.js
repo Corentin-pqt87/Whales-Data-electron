@@ -46,10 +46,15 @@ app.whenReady().then(() => {
   // quand l'appli et prette a  ce lancer
   db = new AppDatabase();
 
-  // créer/ouvrir un fichier de sauvegarde
+  // créer un fichier de sauvegarde
   ipcMain.handle('db:create-secondary', async (event, { baseName, baseDescription }) => {
     const win = BrowserWindow.fromWebContents(event.sender);
     return await db.addBase(win, baseName, baseDescription);
+  });
+  // ouvrir un fichier de sauvegarde
+  ipcMain.handle('db:open-secondary', async (event, { baseName, baseDescription }) => {
+    const win = BrowserWindow.fromWebContents(event.sender);
+    return await db.openBase(win, baseName, baseDescription);
   });
 
   createWindow();

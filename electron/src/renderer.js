@@ -21,7 +21,7 @@ console.log(
 
 
 // BOUTON : Nouvelle Base
-document.querySelector('.theme-primary')?.addEventListener('click', async () => {
+document.querySelector('.new-base')?.addEventListener('click', async () => {
   // valeur par défaut
   const result = await window.api.createSave({
     baseName: "Nouvelle sauvegarde",
@@ -30,6 +30,25 @@ document.querySelector('.theme-primary')?.addEventListener('click', async () => 
 
   if (result.success) {
     console.log("Fichier de sauvegarde créé :", result.path);
+  } else {
+    console.log("Action annulée ou erreur :", result.message || result.error);
+  }
+});
+
+// BOUTON : Ouvrir et Ajouter un fichier de sauvegarde
+document.querySelector('.add-base')?.addEventListener('click', async () => {
+  const result = await window.api.openSave({
+    baseName: null,
+    baseDescription: null
+  });
+
+  if (result.success) {
+    console.log(
+      result.alreadyRegistered
+        ? "Sauvegarde déjà connue :" 
+        : "Sauvegarde ouverte et enregistrée :",
+      result.path
+    );
   } else {
     console.log("Action annulée ou erreur :", result.message || result.error);
   }

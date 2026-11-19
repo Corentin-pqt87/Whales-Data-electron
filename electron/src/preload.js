@@ -6,5 +6,6 @@ const { contextBridge, ipcRenderer } = require('electron');
 
 // preload des fichiers de sauvegarde
 contextBridge.exposeInMainWorld('api', {
-    createSave: (data) => ipcRenderer.invoke('db:create-secondary', data)
+    createSave: (data) => ipcRenderer.invoke('db:create-secondary', data),
+    openSave:   (data) => ipcRenderer.invoke('db:open-secondary',   data),
 });

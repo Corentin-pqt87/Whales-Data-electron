@@ -73,8 +73,69 @@ class AppDatabase{
     }
 
     // ouvrir une base de donnée de navigateur
-    openBase(){
+    async openBase(win, baseName, baseDescription) {
+        // 1. boîte de dialogue "Ouvrir" (≠ "Enregistrer")
+        const { canceled, filePaths } = await dialog.showOpenDialog(win, {
+            title: 'Ouvrir une base de données de sauvegarde',
+            properties: ['openFile'],
+            filters: [
+                { name: 'Fichiers SQLite', extensions: ['sqlite', 'db'] },
+                { name: 'Tous les fichiers', extensions: ['*'] }
+            ]
+        });
 
+        if (canceled || filePaths.length === 0) {
+            return { success: false, message: "Ouverture annulée par l'utilisateur" };
+        }
+
+        const filePath = filePaths[0];
+
+        try {
+            const save = new SaveFile(filePath);
+            save.open({ readonly: true });
+
+            const hasSchema = save.db
+                .prepare(`SELECT name FROM sqlite_master WHERE type='table' AND name='File'`)
+                .get();
+
+            save.close();
+
+            if (!hasSchema) {
+                return {
+                    success: false,
+                    error: "Le fichier sélectionné n'est pas une sauvegarde valide"
+                };
+            }
+
+            // est il en mémoir dans AppDatabase
+            const existing = this.db
+                .prepare(`SELECT * FROM Base WHERE "path" = ?`)
+                .get(filePath);
+
+            if (existing) {
+                return { success: true, alreadyRegistered: true, ...existing };
+            }
+
+            // si on ne le connait pas on l'ajoute
+            const info = this.db.prepare(`
+                INSERT INTO Base (base_name, base_description, "path") VALUES (?, ?, ?)
+            `).run(
+                baseName || path.basename(filePath, path.extname(filePath)),
+                baseDescription || null,
+                filePath
+            );
+
+            return {
+                success: true,
+                id_base: info.lastInsertRowid,
+                base_name: baseName,
+                base_description: baseDescription,
+                path: filePath
+            };
+        } catch (error) {
+            console.error("Erreur lors de l'ouverture de la sauvegarde :", error);
+            return { success: false, error: error.message };
+        }
     }
 
     // supprimer une base de données de navigateur
@@ -85,6 +146,14 @@ class AppDatabase{
     // modifier une base de données de navigateur
     updateBase(){
 
+    }
+    // ouvrir une instance de base de donnée de sauvegarde
+    openBaseInstance(filePath) {
+        if (!this.currentSave || this.currentSave.dbPath !== filePath) {
+            this.currentSave?.close();
+            this.currentSave = new SaveFile(filePath).open();
+        }
+        return this.currentSave;
     }
 }
 
