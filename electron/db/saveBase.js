@@ -1,4 +1,3 @@
-import { app } from 'electron';
 import path from 'node:path';
 import fs from 'node:fs';
 import Database from 'better-sqlite3';
@@ -174,14 +173,14 @@ export class SaveFile {
     // lier un autheur a un fichier
     linkFileAuthor(idFile, idAuthor){
         return this.db
-            .prepare(`INSERT INTO File_author (id_file, id_author) VALUES (?, ?)`)
+            .prepare(`INSERT INTO File_autor (id_file, id_author) VALUES (?, ?)`)
             .run(idFile, idAuthor).lastInsertRowid;
     }
 
     // lier un fichier a un tag
     linkFileTag(idFile, idTag){
         return this.db
-            .prepare(`INSERT INTO FileTag (id_file, id_tag) VALUES (?, ?)`)
+            .prepare(`INSERT INTO File_tag (id_file, id_tag) VALUES (?, ?)`)
             .run(idFile, idTag).lastInsertRowid;
     }
 

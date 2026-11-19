@@ -1,8 +1,7 @@
-import { app, BrowserWindow } from 'electron';
+import { app, BrowserWindow, ipcMain } from 'electron';
 import path from 'node:path';
 import started from 'electron-squirrel-startup';
 import AppDatabase from '../db/database';
-import SaveBase from '../db/saveBase'
 
 // vv ===========LET =========== vv
 
@@ -46,6 +45,12 @@ app.whenReady().then(() => {
 
   // quand l'appli et prette a  ce lancer
   db = new AppDatabase();
+
+  // créer/ouvrir un fichier de sauvegarde
+  ipcMain.handle('db:create-secondary', async (event, { baseName, baseDescription }) => {
+    const win = BrowserWindow.fromWebContents(event.sender);
+    return await db.addBase(win, baseName, baseDescription);
+  });
 
   createWindow();
 

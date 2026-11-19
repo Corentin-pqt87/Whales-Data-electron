@@ -17,3 +17,20 @@ import './style/index.css';
 console.log(
   '👋 This message is being logged by the renderer process, included via Vite',
 );
+
+
+
+// BOUTON : Nouvelle Base
+document.querySelector('.theme-primary')?.addEventListener('click', async () => {
+  // valeur par défaut
+  const result = await window.api.createSave({
+    baseName: "Nouvelle sauvegarde",
+    baseDescription: "Description de la sauvegarde"
+  });
+
+  if (result.success) {
+    console.log("Fichier de sauvegarde créé :", result.path);
+  } else {
+    console.log("Action annulée ou erreur :", result.message || result.error);
+  }
+});

@@ -1,0 +1,43 @@
+.
+├── CONTRIBUTING.md
+├── doc
+│   ├── components
+│   ├── db
+│   │   └── schematic.canvas
+│   ├── maquettes
+│   │   ├── palette.md
+│   │   ├── proto-logo.kra
+│   │   ├── proto-logo.png
+│   │   ├── proto-logo.svg
+│   │   ├── shells.webp
+│   │   ├── thématique.md
+│   │   └── zonning.md
+│   ├── Méta data.md
+│   ├── pages
+│   ├── Signets.md
+│   ├── tache.md
+│   └── Tags.md
+├── electron
+│   ├── db
+│   │   ├── database.js
+│   │   ├── dbModel.sql
+│   │   ├── saveBase.js
+│   │   └── WDdb.sql
+│   ├── forge.config.mjs
+│   ├── index.html
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── src
+│   │   ├── main.js
+│   │   ├── preload.js
+│   │   ├── renderer.js
+│   │   └── style
+│   │       └── index.css
+│   ├── vite.main.config.mjs
+│   ├── vite.preload.config.mjs
+│   └── vite.renderer.config.mjs
+├── README.md
+├── run.sh
+└── tree
+
+10 directories, 31 files
